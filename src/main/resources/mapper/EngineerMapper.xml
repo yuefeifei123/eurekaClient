@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="coderServer.mybatisPlus.mapper.EngineerMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="coderServer.mybatisPlus.entity.Engineer">
+        <result column="create_at" property="createAt" />
+        <result column="update_at" property="updateAt" />
+        <result column="engineer_id" property="engineerId" />
+        <result column="engineer_img" property="engineerImg" />
+        <result column="engineer_type" property="engineerType" />
+        <result column="engineer_intro" property="engineerIntro" />
+        <result column="engineer_sill" property="engineerSill" />
+        <result column="engineer_degree" property="engineerDegree" />
+        <result column="engineer_growth" property="engineerGrowth" />
+        <result column="engineer_scarcity" property="engineerScarcity" />
+        <result column="engineer_salary_One" property="engineerSalaryOne" />
+        <result column="engineer_salary_Three" property="engineerSalaryThree" />
+        <result column="engineer_salary_Five" property="engineerSalaryFive" />
+        <result column="engineer_proceed" property="engineerProceed" />
+        <result column="engineer_tip" property="engineerTip" />
+    </resultMap>
+
+</mapper>
