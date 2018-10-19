@@ -1,6 +1,6 @@
 package eurekaserver.server;
 
-import coderServer.ServerApplication;
+import coderServer.EurekaClientApplication;
 import coderServer.tkmabatis.entity.User;
 import coderServer.tkmabatis.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
@@ -14,7 +14,7 @@ import tk.mybatis.mapper.entity.Example;
 
 @Slf4j
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = ServerApplication.class)
+@SpringBootTest(classes = EurekaClientApplication.class)
 public class MybatisGenerator {
 
     @Test

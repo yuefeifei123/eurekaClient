@@ -1,6 +1,6 @@
 package eurekaserver.server;
 
-import coderServer.ServerApplication;
+import coderServer.EurekaClientApplication;
 import coderServer.mybatisPlus.entity.Student;
 
 import coderServer.mybatisPlus.mapper.StudentMapper;
@@ -23,7 +23,7 @@ import java.util.stream.Collectors;
 
 @Slf4j
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = ServerApplication.class)
+@SpringBootTest(classes = EurekaClientApplication.class)
 public class MybatisPlusTest {
 
     @Test

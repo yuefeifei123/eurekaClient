@@ -8,7 +8,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 @MapperScan(basePackages = "coderServer.*.mapper")
 @SpringBootApplication
-public class ServerApplication {
+public class EurekaClientApplication {
     /**
      * mybatisPlus分页插件需要这个bean来启动
      */
@@ -17,7 +17,7 @@ public class ServerApplication {
         return new PaginationInterceptor();
     }
     public static void main(String[] args) {
-        SpringApplication.run(ServerApplication.class, args);
+        SpringApplication.run(EurekaClientApplication.class, args);
 
     }
 }

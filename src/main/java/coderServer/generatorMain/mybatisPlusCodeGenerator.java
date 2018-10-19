@@ -1,4 +1,4 @@
-package coderServer;
+package coderServer.generatorMain;
 
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
@@ -43,7 +43,7 @@ public class mybatisPlusCodeGenerator {
         GlobalConfig gc = new GlobalConfig();
         //项目路径,user.dir为项目路径，如果要输出别的文件夹，需要指定
 //        String projectPath = System.getProperty("user.dir");
-        String projectPath = "c:/gongzuofile/eurekaServer11";
+        String projectPath = "c:/gongzuofile/eurekaClient1";
         //输出目录
         gc.setOutputDir(projectPath + "/src/main/java");
         //作者
