@@ -1,2 +1,2 @@
-# eurekaServer
-code generator
+# eurekaClient
+this is for code generator
