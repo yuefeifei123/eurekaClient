@@ -1,2 +1,2 @@
 # eurekaServer
-code generatpr
+code generator
