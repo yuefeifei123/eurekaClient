@@ -60,7 +60,7 @@ public class mybatisPlusCodeGenerator {
 //        gc.setBaseColumnList(true);
         //%s占位符代替表名,自定生成的类名
 //        gc.setEntityName("%s");
-        gc.setMapperName("%sMapper");
+        gc.setMapperName("%sDao");
         //xml文件名称，试验了没用
 //        gc.setXmlName("%sDao");
         gc.setServiceName("%sService");
@@ -70,12 +70,12 @@ public class mybatisPlusCodeGenerator {
 
         // 数据源配置;常见配置，不用解释；
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3306/testgenerate?useUnicode=true&useSSL=false" +
+        dsc.setUrl("jdbc:mysql://118.24.35.164:3306/sildenafil?useUnicode=true&useSSL=false" +
                 "&serverTimezone=UTC&characterEncoding=utf8");
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("123456");
+        dsc.setPassword("admin");
 //        dsc.setPassword("密码");
         mpg.setDataSource(dsc);
 
@@ -85,7 +85,7 @@ public class mybatisPlusCodeGenerator {
 //        pc.setModuleName(scanner("模块名"));
 //        pc.setModuleName("eurekaserver");
         //父包名。如果为空，将下面子包名必须写全部， 否则就只需写子包名
-        pc.setParent("coderServer.mybatisPlus");
+        pc.setParent("coderServer.sildenafilTest");
 //        pc.setParent("client.com");
         mpg.setPackageInfo(pc);
 
@@ -128,7 +128,7 @@ public class mybatisPlusCodeGenerator {
 //        strategy.setSuperControllerClass("com.baomidou.ant.common.BaseController");
         //需要包含的表名，允许正则表达式（与exclude二选一配置）
 //        strategy.setInclude(scanner("表名"));
-        strategy.setInclude("engineer","student");
+        strategy.setInclude("like","article","collection");
         //自定义基础的Entity类，公共字段
 //        strategy.setSuperEntityColumns("id");
         //驼峰转连字符

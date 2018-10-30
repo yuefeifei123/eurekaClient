@@ -84,5 +84,10 @@ public class MybatisPlusTest {
         System.out.println("****使用like条件分页查询******");
         page3.getRecords().forEach(System.out::println);
     }
+    @Test
+    public void testStu() {
+        Student student=studentService.getById(27l);
+        System.out.println(student);
+    }
 
 }
